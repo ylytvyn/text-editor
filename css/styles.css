@@ -1,0 +1,186 @@
+:root {
+	--main-width: 1024px;
+	--color-back: #464f54;
+	--font-main: Georgia,Times,"Times New Roman",serif;
+	--font-proxima: ProximaNova, sans-serif;
+}
+@font-face {
+    font-family: ProximaNova;
+    src: url('fonts/ProximaNova/proximanova-regular-webfont.eot');
+    src: url('fonts/ProximaNova/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ProximaNova/proximanova-regular-webfont.woff2') format('woff2'),
+         url('fonts/ProximaNova/proximanova-regular-webfont.woff') format('woff'),
+         url('fonts/ProximaNova/proximanova-regular-webfont.ttf') format('truetype'),
+         url('fonts/ProximaNova/proximanova-regular-webfont.svg#ProximaNova') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: FuturaPT;
+    src: url('fonts/FuturaPT/FuturaPT-Heavy.eot');
+    src: url('fonts/FuturaPT/FuturaPT-Heavy?#iefix') format('embedded-opentype'),
+         url('fonts/FuturaPT/FuturaPT-Heavy.woff2') format('woff2'),
+         url('fonts/FuturaPT/FuturaPT-Heavy.woff') format('woff'),
+         url('fonts/FuturaPT/FuturaPT-Heavy.ttf') format('truetype'),
+         url('fonts/FuturaPT/FuturaPT-Heavy.svg#FuturaPT') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	width: 100%;
+	min-width: var(--main-width);
+	background: var(--color-back);
+	font-family: var(--font-main);
+}
+
+.editor-main {
+	background: #fff;
+	box-shadow: 0 0 35px 0 rgba(0,0,0,.22);
+	width: 1000px;
+	padding: 200px 125px 30px;
+	margin: 150px auto 50px;
+	position: relative;
+}
+
+.editor-main::before {
+	content: '';
+	background: #e8eced;
+	width: 2px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 65px;
+}
+
+.editor-author {
+	color: #b4b4b4;
+	font: 20px var(--font-proxima);
+	text-transform: uppercase;
+	letter-spacing: 2.2px;
+	margin-bottom: 40px;
+}
+
+h1 {
+	font: 70px/75px FuturaPT, sans-serif;
+	text-transform: uppercase;
+	color: #2a2a2a;
+	letter-spacing: .5px;
+}
+
+.editor-description {
+	color: #8f8f8f;
+	font-size: 30px;
+	font-style: italic;
+	margin-bottom: 50px;
+}
+
+.editor-text {
+	font-size: 27px;
+	line-height: 40px;
+	color: #000;
+	margin-bottom: 30px;
+	text-align: justify;
+}
+
+.editor-tool {
+	width: 850px;
+	position: absolute;
+	top: -105px;
+	right: -70px;
+}
+
+.editor-field {
+	padding: 40px 0 50px 60px;
+	background: #181818;
+	color: #fff;
+	box-shadow: -4px -4px 59px 0 rgba(0, 0, 0, 0.16);
+}
+
+.editor-field p {
+	font: 48px/80px 'Playfair Display', serif;
+	border-bottom: 3px solid rgba(255,255,255,.1);
+}
+
+.editor-field span {
+	color: #767676;
+	text-transform: uppercase;
+	font: 15px var(--font-proxima);
+	letter-spacing: 2px;
+}
+
+.editor-icons {
+	padding: 20px 40px;
+	margin-left: 60px;
+	background: #fbc02d;
+	box-shadow: -4px -4px 59px 0 rgba(0, 0, 0, 0.16);
+}
+
+.editor-icons li {
+	width: 48px;
+	height: 48px;
+	cursor: pointer;
+	display: inline-block;
+	transition: all .2s;
+	opacity: .5;
+	margin-right: 15px;
+}
+
+.editor-icons li:last-child {
+	margin-right: 0;
+}
+
+.editor-icons li:hover {
+	opacity: 1;
+}
+
+.editor-icons li.icon-a {
+	background-image: url(../images/icon-a.png);
+}
+
+.editor-icons li.icon-t {
+	background-image: url(../images/icon-t.png);
+}
+
+.editor-icons li.icon-img {
+	background-image: url(../images/icon-img.png);
+}
+
+.editor-icons li.icon-b {
+	background-image: url(../images/icon-b.png);
+}
+
+.editor-icons li.icon-i {
+	background-image: url(../images/icon-i.png);
+}
+
+.editor-icons li.icon-u {
+	background-image: url(../images/icon-u.png);
+}
+
+.editor-icons li.icon-line-1 {
+	background-image: url(../images/icon-line-1.png);
+}
+
+.editor-icons li.icon-line-2 {
+	background-image: url(../images/icon-line-2.png);
+}
+
+.editor-icons li.icon-line-3 {
+	background-image: url(../images/icon-line-3.png);
+}
+
+.editor-icons li.icon-line-4 {
+	background-image: url(../images/icon-line-4.png);
+}
